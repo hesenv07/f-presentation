@@ -21,3 +21,35 @@
     text-wrap: balance;
   }
 }
+
+  
+.main-btn {
+  background-color: #027eb0;
+  color: white;
+  text-align: center;
+  font-size: small;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.2rem;
+}
+.main-btn:hover {
+  background-color: #026c97;
+}
+.light-btn {
+  background-color: white;
+  color: #027eb0;
+  text-align: center;
+  font-size: small;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.2rem;
+}
+.light-btn:hover {
+  background-color: #e9edf8;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+}
