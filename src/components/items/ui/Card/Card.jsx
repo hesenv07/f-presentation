@@ -17,7 +17,7 @@ const Card = ({ data }) => {
                 </li>
                 <li>
                     <div className="text-gray-400 text-xs hover:text-gray-500">
-                        <span>{data.view} viewa</span>
+                        <span>{data.view} view</span>
                     </div>
                 </li>
             </ul>

@@ -7,7 +7,7 @@ import { ButtonGroup, Logo } from "./ui";
  const Header=()=>{
     
     return (
-        <header className="bg-white font-manrope sticky top-0 z-999">
+        <header className="bg-white font-manrope sticky top-0 z-50">
           <nav
             className="sm:mx-auto relative flex max-w-fullScreen items-center justify-between py-3 md:px-8 px-3"
             aria-label="teqdimatlar"

@@ -1,2 +1,7 @@
 export * from './header'
 export * from './category'
+export * from './footer'
+export * from './items'
+export * from './login'
+export * from './register'
+export * from './verify-user'

@@ -1,8 +1,7 @@
 
-import { Banner, Container } from "common";
+import { Banner } from "common";
 
-import { Header, Category } from "components";
-import { Items } from "components/items";
+import { Header, Category, Footer,Items } from "components";
 
 import { SITENAME, SITENAME_DESCRİPTİON } from "contants";
 
@@ -14,11 +13,10 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="min-h-screen  max-h-auto relative">
-      <Header />
       <Category />
       <Banner />
       <Items />
-      <Items />
+      <Items  />
     </main>
   );
 }
