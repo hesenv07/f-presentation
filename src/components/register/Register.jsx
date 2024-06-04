@@ -72,7 +72,7 @@ const Register = () => {
 
     const handleSubmit = async () => {
         setLoading(true);
-        const response = await fetch(`/api/login`, {
+        const response = await fetch(`/api/register`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -83,12 +83,12 @@ const Register = () => {
         });
 
         setLoading(false);
-
         if (!response.ok) {
+
         }
 
         if (response.ok) {
-            router.refresh()
+            router.push('/verify-code?email=' + formik.values.email)
         }
 
     };

@@ -10,15 +10,15 @@ export const POST = async (request) => {
       'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type, Authorization',
     },
-    body: JSON.stringify({
-      ...body
-    }),
+    credentials: 'include',
+    body: JSON.stringify(body),
   });
-
-  const response = await res.json()
-  const {  status, message } = response || {}
-  const statusCode = status==200 ? 200 : 404
-  const success=status==200 ? true : false
-  return NextResponse.json({ data: {  message, success } }, { status: statusCode, });
+  const data = await res.json()
+  if (data.status == 200) {
+    return NextResponse.json({ data }, { status: 200, });
+  }
+  else {
+    return NextResponse.json({ data }, { status: 400, });
+  }
 
 };

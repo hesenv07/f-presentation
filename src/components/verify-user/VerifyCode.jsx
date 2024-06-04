@@ -10,7 +10,6 @@ export default function VerifyUser({ code }) {
     const router = useRouter()
 
     const [loading, setLoading] = useState(true);
-
     const handleVerify = async () => {
         setLoading(true);
         const response = await fetch(`/api/verify-code`, {
@@ -18,14 +17,18 @@ export default function VerifyUser({ code }) {
             credentials: 'include',
             body: JSON.stringify({ verificationCode: code}),
         });
+        if(response.ok){
+            router.refresh()
+            router.push("/");
+        }
         setLoading(false);
     };
 
-    // useEffect(() => {
-    //     if(code){
-    //         handleVerify()
-    //     }
-    // }, [code])
+    useEffect(() => {
+        if(code){
+            handleVerify()
+        }
+    }, [code])
 
     return (
         <div style={{ height: "100vh" }}>
