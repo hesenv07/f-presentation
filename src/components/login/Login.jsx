@@ -12,7 +12,6 @@ import { SocialLinks } from "common/sosial-link";
 
 import { FormInputsParentElement, FormLayout, FormParentElement, InputInfoElements } from "common/form";
 
-
 import { initialValues, SOCIAL_LINKS } from "./consts";
 
 import { validationSchema } from "./validation";
@@ -74,10 +73,8 @@ const Login = () => {
         });
 
         setLoading(false);
-
         if (!response.ok) {
         }
-
         if (response.ok) {
             router.refresh()
         }

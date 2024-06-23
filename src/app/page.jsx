@@ -1,7 +1,7 @@
 
 import { Banner } from "common";
 
-import { Header, Category, Footer,Items } from "components";
+import { Category, Items } from "components";
 
 import { SITENAME, SITENAME_DESCRİPTİON } from "contants";
 

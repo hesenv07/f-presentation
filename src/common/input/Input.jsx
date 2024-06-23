@@ -47,7 +47,7 @@ import Image from "next/image";
             : `rounded-lg border  px-4 md:px-[20px] border-solid  ${error ? "border-red-300" : warning
               ? "border-orange-300 placeholder:text-orange-500"
               : "border-[#D3D1D6] placeholder:text-input-text-color"}`
-            }  block w-full md:h-10  hover:border-[#005BFF] h-8  my-2 md:my-0  outline-none text-[#334155] xsm:text-sm lg:text-base xsm:leading-6`}
+            }  block w-full md:h-10  hover:border-main h-8  my-2 md:my-0  outline-none text-[#334155] xsm:text-sm lg:text-base xsm:leading-6`}
         />
         <div className="cursor-pointer absolute flex items-center inset-y-3 right-2">
           <div className="relative flex justify-center items-center gap-2">
