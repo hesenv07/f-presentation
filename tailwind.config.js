@@ -11,7 +11,9 @@ module.exports = {
        colors:{
         main:"#027eb0",
         main_hover:"#026c97",
-        light:"#e9edf8"
+        light:"#e9edf8",
+        warning:'#bf3131',
+        blue_gray:'#636c8b'
        },
       maxWidth:{
         "fullScreen": "1920px",
@@ -19,5 +21,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 };
