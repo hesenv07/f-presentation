@@ -31,7 +31,7 @@ const Header = () => {
       >
         <div className="flex justify-start gap-x-4 items-center">
           <div onClick={open} className="lg:hidden flex"><MenuIcon className='text-2xl' /></div>
-          <Logo width={100} height={50} name="Logo" href="/" url='/icons/logo.svg' />
+          <Logo width={110}  height={50} name="Logo" href="/" url='/icons/logo.svg' />
         </div>
         {restrict && <div className="w-full max-w-[180px] md:max-w-md lg:max-w-lg  relative items-center">
           <Search />

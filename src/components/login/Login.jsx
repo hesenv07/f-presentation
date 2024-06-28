@@ -71,7 +71,7 @@ const Login = () => {
             credentials: 'include',
             body: JSON.stringify({ ...formik.values }),
         });
-
+console.log(await response.json());
         setLoading(false);
         if (!response.ok) {
         }

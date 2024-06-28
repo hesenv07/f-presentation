@@ -33,10 +33,10 @@ const Search = () => {
         <div className="relative z-50">
             <Combobox as="div" value={query} onChange={(value) => setQuery(value)}>
                 <div className="relative   rounded-xl  shadow-2xl ring-1 ring-black ring-opacity-20">
-                    <SearchIcon className="pointer-events-none absolute left-4 top-2.5 h-6 w-5 text-gray-400" />
+                    <SearchIcon className="pointer-events-none absolute left-4 top-2 h-6 w-5 text-gray-400" />
                     <ComboboxInput
                         autoFocus
-                        className="h-10 w-full border-0 bg-transparent pl-11 pr-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm"
+                        className="h-9 w-full border-0 bg-transparent pl-11 pr-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm"
                         placeholder="Search..."
                         onChange={(event) => {
                             setQuery(event.target.value);
@@ -54,7 +54,7 @@ const Search = () => {
                                     key={person.id}
                                     value={person.name}
                                     className={({ active }) =>
-                                        classNames('cursor-default select-none px-4 py-2', active && 'bg-indigo-600 text-white')
+                                        classNames('cursor-default select-none px-4 py-2', active && 'bg-main text-white')
                                     }
                                 >
                                     {person.name}

@@ -38,7 +38,7 @@ import Image from "next/image";
   return (
     <div className="flex flex-col w-full">
       <div className={`relative rounded-3xl w-full border-red-300 ${"border-input-border"}`}>
-        {title && <label className="text-[#94A3B8] block mb-3">{title}</label>}
+        {title && <label className="text-blue_gray block mb-2">{title}</label>}
         <input
           type={type === "password" ? (inputType ? "text" : "password") : type}
           {...{ id, name, placeholder, onChange, value, disabled }}
@@ -47,7 +47,7 @@ import Image from "next/image";
             : `rounded-lg border  px-4 md:px-[20px] border-solid  ${error ? "border-red-300" : warning
               ? "border-orange-300 placeholder:text-orange-500"
               : "border-[#D3D1D6] placeholder:text-input-text-color"}`
-            }  block w-full md:h-10  hover:border-main h-8  my-2 md:my-0  outline-none text-[#334155] xsm:text-sm lg:text-base xsm:leading-6`}
+            }  block w-full md:h-10  border-2  focus:outline-none focus:ring-0 focus:border-main h-8  my-2 md:my-0  outline-none text-[#334155] xsm:text-sm lg:text-base xsm:leading-6`}
         />
         <div className="cursor-pointer absolute flex items-center inset-y-3 right-2">
           <div className="relative flex justify-center items-center gap-2">

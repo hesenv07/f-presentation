@@ -13,7 +13,8 @@ module.exports = {
         main_hover:"#026c97",
         light:"#e9edf8",
         warning:'#bf3131',
-        blue_gray:'#636c8b'
+        blue_gray:'#636c8b',
+        alice_blue:'#f5fcff',
        },
       maxWidth:{
         "fullScreen": "1920px",

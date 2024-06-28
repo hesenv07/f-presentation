@@ -15,6 +15,7 @@ export const POST = async (request) => {
     credentials: 'include',
     body: JSON.stringify(body),
   });
+  console.log(res,'res');
   if (res.ok) {
     const requestHeaders = new Headers(res.headers)
     requestHeaders['Content-Type'] = 'application/json';
